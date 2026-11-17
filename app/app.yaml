@@ -1,0 +1,17 @@
+command:
+  - streamlit
+  - run
+  - app.py
+  - --server.headless=true
+
+env:
+  - name: LAKEBASE_ENDPOINT
+    valueFrom: lakebase
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
+  - name: GENIE_SPACE_ID
+    valueFrom: genie-space
+  - name: LAKEBASE_BRANCH
+    value: projects/lakeview-health/branches/production
+  - name: KPI_TABLE
+    value: simo_show_case_catalog.lakeview_health.gold_readmission_kpis_monthly

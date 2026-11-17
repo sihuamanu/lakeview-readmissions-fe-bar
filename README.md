@@ -2,6 +2,8 @@
 
 > FE Bar build | Industry: Healthcare (provider) | Data: 100% synthetic (no real PHI)
 
+**Repo layout:** `notebooks/` (00-05, run in order) | `pipeline/transformations/` (Lakeflow SDP SQL: bronze, silver, gold) | `app/` (Databricks App) | `deck/` (presentation) | `docs/` (use-case design). The key execution results are written out as text in section 3 below. *Notebook cell outputs are not included in this commit yet.*
+
 ## 1. Business outcome
 
 **Customer (fictional):** Lakeview Health, a 3-hospital regional system (LVH-NORTH, LVH-CENTRAL, LVH-SOUTH).
